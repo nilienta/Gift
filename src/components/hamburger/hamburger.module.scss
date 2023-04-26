@@ -1,0 +1,73 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 39px;
+  overflow-x: hidden;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__button {
+    @include font-menu;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    position: relative;
+    z-index: 1;
+
+    transform-origin: left bottom;
+    transition: all 0.3s ease-in;
+  }
+
+  &__item {
+    position: relative;
+    width: fit-content;
+  }
+
+  &__item:hover &__button {
+    color: $purple;
+    transform: rotate(-6deg);
+  }
+
+  &__subtile {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+
+    color: $white;
+    font-size: 0px;
+
+    transform: translate(0px, -12px);
+    transition: all 0.3s ease-in;
+  }
+
+  &__item:hover &__subtile {
+    font-size: 6px;
+    transform: translate(calc(100% - 4em), -12px);
+  }
+
+  &__link {
+    @include font-menu;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  &__link:last-child {
+    margin-top: 87px;
+  }
+}

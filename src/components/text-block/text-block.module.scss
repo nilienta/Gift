@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.title {
+  @include font-title;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.paragraph {
+  @include base-font;
+}

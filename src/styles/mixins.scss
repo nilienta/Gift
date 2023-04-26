@@ -1,0 +1,65 @@
+@import './variables.scss';
+
+@mixin base-font {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: $light-pink;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@mixin font-title {
+  @include base-font;
+  font-size: 48px;
+  line-height: 59px;
+
+  @media (max-width: 992px) and (min-width: 768.99px) {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  @media (max-width: 768px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+@mixin font-btn {
+  @include base-font;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@mixin font-menu {
+  @include base-font;
+  font-size: 24px;
+  line-height: 29px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@mixin font-lvl {
+  @include base-font;
+  font-size: 18px;
+  line-height: 22px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

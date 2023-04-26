@@ -1,0 +1,77 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.list {
+  padding-left: 0;
+  margin: 43px 0px 8px 0px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 50px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12.5px;
+  }
+
+  &__wrap {
+    @media (max-width: 768px) {
+      order: 1;
+    }
+  }
+
+  &__item {
+    list-style: none;
+  }
+}
+
+.button {
+  @include font-lvl;
+  color: $white;
+  border: 1px solid $white;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 8px 37.5px;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+  position: relative;
+  z-index: 7;
+
+  &-1 {
+    &:hover {
+      background-color: $purple;
+    }
+    &:active {
+      filter: saturate(0.5);
+    }
+  }
+  &-2 {
+    &:hover {
+      background-color: $blue;
+    }
+    &:active {
+      filter: saturate(0.5);
+    }
+  }
+  &-3 {
+    &:hover {
+      background-color: $pink;
+    }
+    &:active {
+      filter: saturate(0.5);
+    }
+  }
+
+  &--active-1 {
+    background-color: $purple;
+  }
+  &--active-2 {
+    background-color: $blue;
+  }
+  &--active-3 {
+    background-color: $pink;
+  }
+}

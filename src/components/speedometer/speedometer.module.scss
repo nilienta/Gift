@@ -1,0 +1,90 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.speedometer {
+  position: relative;
+  width: 371px;
+  height: 371px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 13px 0px 0px auto;
+
+  @media (max-width: 768px) {
+    margin: 13px auto;
+  }
+
+  &__wrap {
+    @media (max-width: 768px) {
+      order: 2;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.5s ease;
+  }
+}
+
+.ellipse {
+  z-index: 1;
+}
+
+.indicator {
+  z-index: 2;
+
+  &--dark {
+    filter: saturate(0.5);
+  }
+}
+
+.arrow {
+  z-index: 3;
+  transform: rotate(110deg);
+  transition: all 0.2s ease;
+
+  &--1 {
+    transform: rotate(0deg);
+  }
+  &--2 {
+    transform: rotate(120deg);
+  }
+  &--3 {
+    transform: rotate(240deg);
+  }
+}
+
+.circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: $purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 4;
+
+  transition: all 0.6s ease;
+
+  &--1 {
+    background-color: $purple;
+  }
+  &--2 {
+    background-color: $blue;
+  }
+  &--3 {
+    background-color: $pink;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
