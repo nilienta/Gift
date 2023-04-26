@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.de0d89b8.css",
+    "main.js": "/static/js/main.88eaa07d.js",
+    "static/media/gift3.png": "/static/media/gift3.ade3073bcf7d596c1ee2.png",
+    "static/media/gift2.png": "/static/media/gift2.b5d4baea30851f40df54.png",
+    "static/media/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.ttf": "/static/media/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.aef4b39a4db7b9c06687.ttf",
+    "static/media/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.svg": "/static/media/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.a33247ee19cd20c634b5.svg",
+    "static/media/gift1.png": "/static/media/gift1.6c9fd730cb93b67d4ff7.png",
+    "static/media/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.woff": "/static/media/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.aec9fb0e916a9487968b.woff",
+    "static/media/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.eot": "/static/media/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.829eda673d800bb3c566.eot",
+    "static/media/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.woff2": "/static/media/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.b4f76c95e88d8b898169.woff2",
+    "static/media/ellipse.svg": "/static/media/ellipse.52df377ec90ffa5eac7d01184a082e6f.svg",
+    "static/media/indicator-3.svg": "/static/media/indicator-3.28eec81b34595a4b7f5272cd8471f917.svg",
+    "static/media/indicator-2.svg": "/static/media/indicator-2.6e94d32cc7f3f2f34c35680e6e88a6cd.svg",
+    "static/media/indicator-1.svg": "/static/media/indicator-1.edba70a0fe2dc418a7463926c01f8534.svg",
+    "static/media/down-wave.svg": "/static/media/down-wave.773a1b5d974d1fa0b680.svg",
+    "static/media/arrow.svg": "/static/media/arrow.199de361cffce7beb4910c82abb752de.svg",
+    "static/media/up-wave.svg": "/static/media/up-wave.1a08696ec70e4d26c3a5.svg",
+    "static/media/slide-background.svg": "/static/media/slide-background.f7ea4766052cadfe0718.svg",
+    "index.html": "/index.html",
+    "static/media/arrow-nav.svg": "/static/media/arrow-nav.6fbc5446c71cf67484a4.svg",
+    "static/media/ellipse-bg.svg": "/static/media/ellipse-bg.598745273a7decf1b7f8f6860bc05886.svg",
+    "main.de0d89b8.css.map": "/static/css/main.de0d89b8.css.map",
+    "main.88eaa07d.js.map": "/static/js/main.88eaa07d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de0d89b8.css",
+    "static/js/main.88eaa07d.js"
+  ]
+}
