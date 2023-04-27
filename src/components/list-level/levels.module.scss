@@ -3,7 +3,7 @@
 
 .list {
   padding-left: 0;
-  margin: 43px 0px 8px 0px;
+  margin: 19px 0px 8px 0px;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -13,7 +13,7 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    gap: 12.5px;
+    gap: 12px;
   }
 
   &__wrap {
@@ -33,12 +33,16 @@
   border: 1px solid $white;
   background-color: transparent;
   border-radius: 20px;
-  padding: 8px 37.5px;
+  padding: 7px 37.5px;
 
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
   position: relative;
   z-index: 7;
+
+  @media (max-width: 768px) {
+    padding: 5.4px 26px;
+  }
 
   &-1 {
     &:hover {

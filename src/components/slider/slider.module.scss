@@ -1,28 +1,32 @@
 .slider {
-  width: 84%;
-  height: 30vh;
-  max-height: 56vh;
-  margin: 50px auto;
+  height: 56.4vh;
+  margin-right: 30px;
+
   position: relative;
   background-image: url('../../assets/img/slide-background.svg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center right;
   background-size: contain;
 
   @media (max-width: 992px) and (min-width: 768.99px) {
-    height: 36vh;
+    height: 37vh;
+    margin-right: 20px;
   }
   @media (max-width: 768px) {
-    height: 30vh;
+    height: 33vh;
+    margin-top: 1em;
+    background-position: center center;
   }
 }
 
 .item {
   position: absolute;
-  width: 100%;
+  width: 65%;
   height: 100%;
-  top: 34px;
-  left: 18px;
+
+  top: -6px;
+  left: 161px;
+
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,8 +34,26 @@
   transition: all 1s ease;
   transform-origin: 300px -30px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) and (min-width: 991.99px) {
+    width: 71%;
+    top: 0px;
+    left: 72px;
+  }
+  @media (max-width: 992px) and (min-width: 768.99px) {
+    width: 71%;
+    top: 0px;
+    left: 72px;
+  }
+  @media (max-width: 768px) and (min-width: 451.99px) {
+    width: 52%;
+    top: -4px;
+    left: 114px;
+  }
+  @media (max-width: 450px) {
     transform-origin: 200px -30px;
+    width: 71%;
+    top: -4px;
+    left: 65px;
   }
 
   &:first-child {
@@ -119,14 +141,27 @@
 
   &__wrap {
     width: 22%;
-    height: 32px;
+    height: 48px;
     position: absolute;
-    bottom: 0;
-    left: 10%;
+    bottom: 8px;
+    left: 22%;
     transition: all 1s ease;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 992px) and (min-width: 768.99px) {
+      width: 24%;
+      left: 15%;
+      bottom: 0;
+      height: 30.74px;
+    }
+    @media (max-width: 768px) {
+      width: 24%;
+      height: 30px;
+      bottom: 4px;
+      left: 16%;
+    }
   }
 }

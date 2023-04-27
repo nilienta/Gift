@@ -28,11 +28,13 @@ export const Home: React.FC<THome> = ({ onClick }) => {
     setIsMobile(document.documentElement.clientWidth <= 768);
   };
 
+  const colClass = `${styles.col} ${styles['col--mobile']}`;
+
   if (isMobile) {
     return (
       <Container>
-        <Col>
-          <TextBlock text={TEXT_CONTENT.home} />
+        <Col className={colClass}>
+          <TextBlock text={TEXT_CONTENT.home} page="home" />
           <Levels />
           <Speedometer />
           <Button htmlType="button" onClick={onClick}>
@@ -46,8 +48,8 @@ export const Home: React.FC<THome> = ({ onClick }) => {
   return (
     <Container>
       <Row className={styles.row}>
-        <Col lg={12} xl={6}>
-          <TextBlock text={TEXT_CONTENT.home} />
+        <Col lg={12} xl={6} className={styles.col}>
+          <TextBlock text={TEXT_CONTENT.home} page="home" />
           <Button htmlType="button" onClick={onClick}>
             Go
           </Button>

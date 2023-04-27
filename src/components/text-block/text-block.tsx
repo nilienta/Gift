@@ -1,13 +1,15 @@
 import React from 'react';
-import Col from 'react-bootstrap/Col';
 import { TTextBlock } from '../../services/types';
 import styles from './text-block.module.scss';
 
-export const TextBlock: React.FC<TTextBlock> = ({ text, ...rest }) => {
+export const TextBlock: React.FC<TTextBlock> = ({ text, page, ...rest }) => {
+  const titleClass = `${styles.title} ${styles[`title--${page}`]}`;
+  const paragraphClass = `${styles.paragraph} ${styles[`paragraph--${page}`]}`;
+
   return (
-    <Col {...rest}>
-      <h1 className={styles.title}>{text.title}</h1>
-      <p className={styles.paragraph}>{text.paragraph}</p>
-    </Col>
+    <>
+      <h1 className={titleClass}>{text.title}</h1>
+      <p className={paragraphClass}>{text.paragraph}</p>
+    </>
   );
 };

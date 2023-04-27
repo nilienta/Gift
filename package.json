@@ -2,7 +2,7 @@
   "name": "gift",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nilienta.github.io/Gift-/",
+  "homepage": "https://nilienta.github.io/Gift/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

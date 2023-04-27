@@ -7,6 +7,7 @@ export type TButton = {
 
 export type TTextBlock = {
   text: { title: string; paragraph: string };
+  page: 'home' | 'gift';
 };
 
 export type TWrapper = {

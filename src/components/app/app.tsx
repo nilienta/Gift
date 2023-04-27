@@ -4,7 +4,6 @@ import { Home } from '../../pages/home/home';
 import { Gift } from '../../pages/gift/gift';
 import { LvlContext } from '../../services/lvlContext';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './app.module.scss';
 import { WrapperWithWave } from '../wrapper/wrapper';
 import { Hamburger } from '../hamburger/hamburger';

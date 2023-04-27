@@ -6,8 +6,56 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  &--home {
+    padding-right: 2em;
+
+    @media (max-width: 1200px) and (min-width: 768.99px) {
+      font-weight: 700;
+      width: 60%;
+    }
+    @media (max-width: 768px) {
+      padding-right: 0em;
+    }
+  }
+
+  &--gift {
+    padding-right: 0;
+
+    @media (max-width: 992px) and (min-width: 768.99px) {
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
 }
 
 .paragraph {
   @include base-font;
+  margin: 0px;
+
+  &--home {
+    padding: 0em 4em 0px 0px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &--gift {
+    padding: 0em 3em 0px 0px;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 0px;
+  }
 }

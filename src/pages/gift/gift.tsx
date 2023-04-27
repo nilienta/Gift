@@ -27,12 +27,13 @@ export const Gift: React.FC<TGift> = ({ onClick }) => {
     setIsMobile(document.documentElement.clientWidth < 768);
   };
 
+  const colClass = `${styles.col} ${styles['col--mobile']}`;
   if (isMobile) {
     return (
       <>
         <Container>
-          <Col style={{ overflow: 'hidden' }}>
-            <TextBlock text={TEXT_CONTENT.gift} />
+          <Col style={{ overflow: 'hidden' }} className={colClass}>
+            <TextBlock text={TEXT_CONTENT.gift} page="gift" />
             <Slider />
             <Button htmlType="button" type="secondary" onClick={onClick}>
               Back
@@ -47,8 +48,8 @@ export const Gift: React.FC<TGift> = ({ onClick }) => {
     <>
       <Container>
         <Row className={styles.row}>
-          <Col xs={12} md={6} xl={6}>
-            <TextBlock text={TEXT_CONTENT.gift} />
+          <Col xs={12} md={6} xl={6} className={styles.col}>
+            <TextBlock text={TEXT_CONTENT.gift} page="gift" />
             <Button htmlType="button" type="secondary" onClick={onClick}>
               Back
             </Button>

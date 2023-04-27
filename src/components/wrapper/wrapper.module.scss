@@ -14,11 +14,21 @@
   flex-direction: column;
 
   width: 200vw;
+  min-width: 748px;
   height: 100vh;
   min-height: 880px;
   justify-content: space-between;
   transition: transform 1s ease-in-out;
   overflow-x: hidden;
+
+  padding-top: 18.6vh;
+
+  @media (max-width: 992px) and (min-width: 768.99px) {
+    padding-top: 12vh;
+  }
+  @media (max-width: 768px) {
+    padding-top: 11.8vh;
+  }
 }
 .wave {
   width: 100%;
@@ -30,13 +40,17 @@
   background-size: cover;
 
   background-size: contain;
-  height: 25vh;
+  height: 24vh;
 
   &--up {
     background-image: url('../../assets/img/up-wave.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &--down {
     background-image: url('../../assets/img/down-wave.svg');
+    background-position: left bottom;
   }
 }
